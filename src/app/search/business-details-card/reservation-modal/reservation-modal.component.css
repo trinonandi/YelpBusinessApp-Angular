@@ -1,0 +1,25 @@
+select {
+  appearance: none;
+}
+
+.form-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+
+}
+
+
+.grey {
+  color: #6c6c6c;
+}
+
+.was-validated .custom-select:valid {
+  background-image: none;
+}
+
+
+.was-validated .custom-select:invalid {
+  background-image: none;
+}

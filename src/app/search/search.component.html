@@ -1,0 +1,5 @@
+<app-search-form (onSearchComplete)="showSearchData($event)" (onSearchError)="searchError($event)" (onReset)="onReset()"></app-search-form>
+<app-search-result-table *ngIf="listFlag && searchResults && searchResults.length > 0" [searchDataList]="searchResults" (onFetchComplete)="saveBusinessData($event)"></app-search-result-table>
+<app-no-result-card *ngIf="searchResults && searchResults.length === 0" message="No results available"></app-no-result-card>
+<app-business-details-card *ngIf="!listFlag && businessData" [businessDetails]="businessData" (onBackPress) = onBackPressed($event)></app-business-details-card>
+<!--<app-business-details-card></app-business-details-card>-->

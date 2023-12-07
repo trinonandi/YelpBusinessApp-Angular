@@ -1,0 +1,55 @@
+.heading {
+  font-size: 20px;
+  color: #4b4b4b;
+}
+
+i {
+  color: red;
+}
+
+.form-check-input {
+  height: 12px;
+  width: 12px;
+  border-radius: 2px;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 1%;
+}
+
+.form-check-label {
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.card {
+  border-radius: 15px;
+}
+
+.card-padding {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+}
+
+.button-margin {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.number-control {
+  color: #938e93;
+}
+
+.grey {
+  color: #6c6c6c;
+}
+
+.time-dropdown {
+  color: #6c6c6c;
+  width: 200px;
+}
+
+.d-flex{
+  min-width: 100%;
+}

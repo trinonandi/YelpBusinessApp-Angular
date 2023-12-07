@@ -1,0 +1,38 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <p class="mb-4 fs-4 text-center">List of your reservations</p>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col table-responsive">
+      <table class="table table-hover text-center ">
+        <thead>
+        <tr>
+          <th>#</th>
+          <th>Business Name</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>E-mail</th>
+          <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr #row *ngFor="let r of reservations; let i = index" [attr.data-id]="reservations[0].id" [attr.data-idx]="i">
+          <td>{{i+1}}</td>
+          <td>
+            {{r.name}}
+          </td>
+          <td>{{r.date}}</td>
+          <td>{{r.hour + ':' + r.min}}</td>
+          <td>
+            {{r.email}}
+          </td>
+          <td>
+            <mat-icon (click)="removeReservation(row)" style="cursor: pointer">delete_outlined</mat-icon>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,5 @@
+
+<app-no-result-card *ngIf="isStorageEmpty()" class="mt-5" message="No reservations to show"></app-no-result-card>
+<app-reservation-table *ngIf="!isStorageEmpty()"></app-reservation-table>
+
+
